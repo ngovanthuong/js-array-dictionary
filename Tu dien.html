@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="insert" >
+<input type="button" id="" value="convert" onclick="convert()" >
+<p id="result"></p>
+<script>
+    let x=['xe may','nha','me','truong hoc','kinh','but','con so','di','an','nha hang'];
+    let y=['motorbike','house','mother','school','glass','pen','number','go','eat','restaurant'];
+    function convert() {
+        let a=document.getElementById("insert").value;
+        for (let i = 0; i < x.length; i++) {
+            if (a === y[i]) {
+                document.getElementById("result").innerHTML = "tu tieng viet  : " +x[i];
+            }else{
+                document.getElementById("result").innerHTML=" khong tim thay ";
+            }
+        }
+    }
+</script>
+</body>
+</html>
